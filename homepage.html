@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<meta charset="utf-8">
+	<!-- Bootstrap css -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- custom css -->
+	<link href="css/style.css" rel="stylesheet">
+	<!-- fontawesom -->
+	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+	<!-- jquery -->
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<!-- bootstrap js -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<!-- custom javascript -->
+	<script type="text/javascript" src="js/custom-jquey.js"></script>
+</head>
+<body>
+	<header class="site-header">
+  		<nav class="navbar navbar-default">
+  			<div class="container-fluid">
+  				<!-- Brand and toggle get grouped for better mobile display -->
+  				<div class="row">
+  					<div class="col-sm-3 navbar-header">
+  						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+  							<span class="sr-only">Toggle navigation</span>
+  							<span class="icon-bar"></span>
+  							<span class="icon-bar"></span>
+  							<span class="icon-bar"></span>
+  						</button>
+  						<a class="navbar-brand" href="#">
+  							<img src="images/logo.png" alt="logo">
+  						</a>
+  					</div>
+  					<!-- Collect the nav links, forms, and other content for toggling -->
+  					<div class="col-sm-9 headr-nav">
+  						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+  							
+  							<ul class="site-navright nav navbar-nav navbar-right">
+  								<li>
+  									<form class="serchbar navbar-form navbar-left">
+  										<div class="form-group">
+  											<input type="text" class="form-control" placeholder="Search">
+  										</div>
+  										<button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+  									</form>
+  								</li>
+  								<li class="user-img"><a href="">About us</a></li>
+  								<li class="user-img"><a href="#"  class="joiToggle">join us</a></li>
+  								<div class="join-us-main togglebox">
+  									<p>Join us</p>
+  									<form>
+  										<div class="form-group">
+  											<input type="text" class="form-control" placeholder="ETH address">
+  											<input type="text" class="form-control" placeholder="Name">
+  											<input type="text" class="form-control" placeholder="Email">
+  										</div>
+  										<button type="submit" class="btn btn-default">Join</button>
+  									</form>
+  								</div>
+	  						</ul>
+						</div><!-- /.navbar-collapse -->
+					</div>
+				</div>
+			</div><!-- /.container-fluid -->
+		</nav>
+	</header>
+	<section class="site-content">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-3 leftside-content">
+				<div class="leftside-content-inner">
+					<h3 class="section-title">Connected to <br/>Ethereum Testnet</h3>
+					<p class="section-summry">A self-perpetuating,<br/> decentralized, cross-borders,<br/> Giving Platform</p>
+				</div></div>
+				<div class="col-sm-6 rightside-content">
+					<div class="rightside-content-inner">
+						<div class="sectionheadings">
+							<div class="row">
+								<h3 class="col-sm-8 section-heding">Ongoing Projects</h3>
+								
+								</div>
+
+								<!-- Modal -->
+								<div class="modal fade" id="createProjectModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									<div class="modal-dialog" role="document">
+										<div class="modal-content">
+											<div class="modal-header">
+												<div class="row">
+													<div class="col-xs-11">
+														<h5 class="modal-title" id="exampleModalLabel">Create a new project </h5>
+													</div>
+													<div class="col-xs-1">
+														<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+															<span aria-hidden="true">&times;</span>
+															</button>
+														</div>
+													
+												</div>  
+											</div>
+											<div class="modal-body">
+												<form class="form-horizontal">
+													<div class="form-group">
+														<div class="col-xs-4"><label for="projectName" class="control-label">Project Title</label></div>
+														<div class="col-xs-8">
+															<input type="text" class="form-control" id="projectName" placeholder="Enter a name for the project">
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-xs-4"><label for="projectDescription" class="control-label">Project Breif</label></div>
+														<div class="col-xs-8 projectDes">
+															<input type="text" class="form-control" id="projectDescription" placeholder="Describe what needs to be done in few lines">
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-xs-4"><label for="projectFunds" class="control-label">Project Funds</label></div>
+														<div class="col-xs-4">
+															<input type="text" class="form-control" id="projectFunds">
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-xs-4"><label for="projectEvalutors" class="control-label">Project Evalutors</label></div>
+														<div class="col-xs-8">
+															<input type="text" class="form-control" id="projectEvalutors" placeholder="Type or paste ETH address">
+															<span>*ETH addrss of the person who should evalute the action after its done</span>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="col-xs-4"><label for="yourName" class="control-label">Your name</label></div>
+														<div class="col-xs-8">
+															<input type="text" class="form-control" id="yourName" placeholder="Type or paste ETH address">
+															<span>ETH address  <span class="main-addtress">0x93E68229430e92873H83L98K12A</span></span>
+														</div>
+													</div>
+												</form>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-primary">Start Project</button>
+												<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="ongoing-projectlinks">
+								<div class="project-links">
+									<div class="tabbable">
+										<ul class="nav nav-tabs">
+											<li class="active"><a href="#allprojects" data-toggle="tab" aria-expanded="false">All Projects</a></li>
+											<li class=""><a href="#zerohunger" data-toggle="tab" aria-expanded="false">Zero Hunger</a></li>
+											<li class=""><a href="#education" data-toggle="tab" aria-expanded="true">Education</a></li>
+											<li class=""><a href="#cleanwater" data-toggle="tab" aria-expanded="true">Clean Water</a></li>
+										</ul>
+										<div class="tab-content">
+											<div class="tab-pane active" id="allprojects">
+												<div class="allprojects-main">
+													<div class="row">
+														<div class="col-sm-2 proj-img-main">
+															<figure><img src="images/logo.png" alt="img" style="padding-top: 25px;"></figure>
+														</div>
+														<div class="col-sm-8 proj-detail">
+															<h3 class="title">Grow ProjectX</h3>
+															<p class="subtitle">Contribute to grow the platform</p>
+															<h4 class="proj-tags-main">
+																
+																<img src="images/funds.png" alt="img">
+																<span class="tag-text">Availabe Funds<strong>10 ETH</strong></span>
+																
+															</h4>
+														</div>
+														<div class="col-sm-2 Contributelink-main"><a href="#"> Contribute</a></div>
+													</div>
+												</div>
+												<div class="allprojects-main">
+													<div class="row">
+														<div class="col-sm-2 proj-img-main">
+															<figure><img src="images/logo.png" alt="img" style="padding-top: 25px;"></figure>
+														</div>
+														<div class="col-sm-8 proj-detail">
+															<h3 class="title">Grow ProjectX</h3>
+															<p class="subtitle">Contribute to grow the platform</p>
+															<h4 class="proj-tags-main">
+																
+																<img src="images/funds.png" alt="img">
+																<span class="tag-text">Availabe Funds <strong>10 ETH</strong></span>
+																
+															</h4>
+														</div>
+														<div class="col-sm-2 Contributelink-main"><a href="#"> Contribute</a></div>
+													</div>
+												</div>
+												<div class="allprojects-main">
+													<div class="row">
+														<div class="col-sm-2 proj-img-main">
+															<figure><img src="images/logo.png" alt="img" style="padding-top: 25px;"></figure>
+														</div>
+														<div class="col-sm-8 proj-detail">
+															<h3 class="title">Grow ProjectX</h3>
+															<p class="subtitle">Contribute to grow the platform</p>
+															<h4 class="proj-tags-main">
+																
+																<img src="images/funds.png" alt="img">
+																<span class="tag-text">Availabe Funds<strong>10 ETH</strong></span>
+																
+															</h4>
+														</div>
+														<div class="col-sm-2 Contributelink-main"><a href="#"> Contribute</a></div>
+													</div>
+												</div>
+											</div>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											<div class="tab-pane" id="zerohunger">Secondo sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan. 
+												Aliquam in felis sit amet augue.</div>
+												<div class="tab-pane " id="education">Thirdamuno, ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
+													Quisque mauris augue, molestie tincidunt condimentum vitae.</div>
+													<div class="tab-pane " id="cleanwater">consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate. 
+														Quisque mauris augue, molestie tincidunt condimentum vitae.</div>
+													</div>
+												</div></div>
+												
+											</div>
+
+
+
+
+
+										</div>
+
+
+									</div>
+								</div>
+							</section>
+
+</body>
+</html>
